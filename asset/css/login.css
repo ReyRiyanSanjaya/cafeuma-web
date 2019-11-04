@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../gambar/gambar.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    display: table;
+}
+
+.masuk {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3em;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: -5px 5px 15px 5px #d86864;
+    background: rgba(88, 54, 54, 0.3);
+    transition: 1.5s;
+}
+
+.masuk:hover {
+    border-radius: 35% 0% 30% 0%;
+    background-color: rgba(49, 4, 4, 0.5);
+}
+
+h2 {
+    margin-top: 0px;
+    font-family: 'Lobster', cursive;
+    color: salmon;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold lighter;
+    font-size: 35px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 1.5s;
+}
+
+label {
+    margin: 10px;
+    padding: 0px;
+    background: transparent;
+    color: salmon;
+    font-weight: lighter;
+    transition: 1.5s;
+}
+
+i {
+    color: rgb(146, 141, 141);
+    transition: 1.5s;
+}
+
+input {
+    display: block;
+    width: 320px;
+    height: 50px;
+    background: rgba(90, 90, 90, 0.3);
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 2%;
+    border-radius: 5px;
+    color: thistle;
+    border-radius: 30%;
+    transition: 1.5s;
+}
+
+input:hover {
+    transform: scale(1.1);
+    box-shadow: -5px 5px 15px -5px #d86864;
+}
+
+button {
+    display: inline-block;
+    width: 332px;
+    height: 50px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold lighter;
+    color: lightcoral;
+    border: 0px;
+    margin-top: 2%;
+    border-radius: 30%;
+    box-shadow: -5px 5px 15px -5px #d86864;
+    transition: 0.5s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: rgb(155, 63, 63, 0.6);
+    color: lightblue;
+    font-family: 'Lobster', cursive;
+}
+
+
+img {
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-200px/2);
+    left: calc(50% - 88px);
+    border-radius: 50%;
+    box-shadow: -5px 5px 15px 5px #d86864;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+img:hover {
+    transition: 1.6s;
+    transform: rotate(-365deg);
+}
+
+
+/*Responsive untuk mobile*/
+@media (max-width: 768px) {
+    .masuk {
+        width: 50%;
+        height: 50%;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    img {
+        height: 40%;
+        width: 50%;
+        top: calc(-50%/2);
+        left: calc(50%/2);
+    }
+}
